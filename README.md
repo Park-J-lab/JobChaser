@@ -1,14 +1,14 @@
 # JobChaser
-&nbsp
+&nbsp  
 A video to see how the program runs: https://youtu.be/Nwx3cAbwe9U
-&nbsp
+&nbsp  
 ## Contents
-&nbsp
+&nbsp  
 Background  
 Installation  
 Usage  
-&nbsp
-&nbsp
+&nbsp  
+&nbsp  
 ## Background
 
 A report shows that in Australia,  there are over 20,000 people per month seeking for a job, but jobs opening are posted in many different platforms, which makes it difficult to search. Therefore, we designed this product to integrate information efficiently, which can save time for both job seekers and recruiters. Job seekers can find desired job information with ease, receive some practical advice to find ideal jobs and get some recommendations about online courses to sharpen their competitiveness. Companies can post jobs here and find some insights to improve recruitement plan. 
