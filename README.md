@@ -131,11 +131,6 @@ Similarly Download the corresponding driver according to your own operating syst
 
 If a wavy line appears when you import our project, please follow this step as below:
 
-SET all packages as Sources Root.
-
-图片: https://uploader.shimo.im/f/G1Nc4gYfcoDpCALg.png图片: https://uploader.shimo.im/f/fzDUkf2pNhtU3PDZ.png
-
-
 SET both package and demo3 as source root,and then press Ctrl+s to save.
 Then in Settings, select Add Source Roots to PYTHONPATH, Add sources root to PYTHONPATH,Then apply.
 
