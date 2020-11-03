@@ -8,9 +8,11 @@ Background
 Installation
 Usage
 
+
 ## Background
 
 A report shows that in Australia,  there are over 20,000 people per month seeking for a job, but jobs opening are posted in many different platforms, which makes it difficult to search. Therefore, we designed this product to integrate information efficiently, which can save time for both job seekers and recruiters. Job seekers can find desired job information with ease, receive some practical advice to find ideal jobs and get some recommendations about online courses to sharpen their competitiveness. Companies can post jobs here and find some insights to improve recruitement plan. 
+
 
 ## Installation
 
@@ -48,7 +50,8 @@ For Mac: Chrome is better, but sometimes it may need to add a driver path to the
 For Windows: Both can be run without adding a path to the code.
 
 图片: https://uploader.shimo.im/f/NW9wAlwTKLouUBBU.png
-(The function 'openBrowser()' is defined in jobInfo\JobSearch.py and jobInfo\Oneshift.py )
+
+The function 'openBrowser()' is defined in jobInfo\JobSearch.py and jobInfo\Oneshift.py 
 
 
 #### For mac(If you use ChromeDriver)
@@ -56,7 +59,9 @@ For Windows: Both can be run without adding a path to the code.
 chromedriver download: http://npm.taobao.org/mirrors/chromedriver/ (please check your chromedriver version)
 For example: If the Chrome version is 86.0.4240.80,
 You can download the version of the driver as below:
+
 图片: https://uploader.shimo.im/f/cTj8yOym1RT4ecDb.png 
+
 Download the corresponding zip package of your own system, unzip the package.
 Then import into the bin folder:
 Open Finder, use Command+Shift+G,
@@ -66,7 +71,7 @@ Drag the unzipped Chromedrive.exe file into it
 After this, you can run our code for the ChromeDriver in jobInfo/JobSearch.py and jobInfo/Oneshift.py as below
 driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')
 
-（Because the MAC path is pretty much the same, we've already written the code ahead of time, if the main program still cannot open a browser, please modify this line "driver = webdriver.Chrome(executable_path=' ') " using a correct path.）
+Because the MAC path is pretty much the same, we've already written the code ahead of time, if the main program still cannot open a browser, please modify this line "driver = webdriver.Chrome(executable_path=' ') " using a correct path.
 
 
 You need to pay atttention to the environment vairables.
@@ -91,7 +96,7 @@ After this, you can run our code for the FirefoxDriver in jobInfo/JobSearch.py a
 
 driver = webdriver.Firefox(executable_path='/usr/local/bin/geckodriver')
 
-(if the main program still cannot open a browser, please modify this line "driver = webdriver.Firefox(executable_path=' ') " using a correct path.)
+if the main program still cannot open a browser, please modify this line "driver = webdriver.Firefox(executable_path=' ') " using a correct path.
 
 You need to pay atttention to the environment vairables.
 
@@ -105,21 +110,20 @@ $ source ~/.bash_profile
 #### For Windows(If you use ChromeDriver)
 
 chromedriver download: http://npm.taobao.org/mirrors/chromedriver/ (please check your chromedriver version)
+
 图片: https://uploader.shimo.im/f/kZz4twnB5WjV4v1P.png
+
 For example: If the Chrome version is 86.0.4240.75,
 You can download this version: http://npm.taobao.org/mirrors/chromedriver/86.0.4240.22/
 Place chromedriver.exe in the Scripts directory under the anaconda installation path, for example: 
 
 图片: https://uploader.shimo.im/f/yWlNoUzKYHYHEAdR.png
 
- Done!
-
 #### For Windows(If you use FirefoxDriver)
 
 Driver download: https://github.com/mozilla/geckodriver/releases (please check your Firefoxdriver version)
 Similarly Download the corresponding driver according to your own operating system. If you use it, you need to add the path of the driver and the path of the Firefox browser to the environment variables
 
-Done!
 
 ## Usage
 
@@ -148,7 +152,7 @@ To run this project, you only need to run the group_1_jobchaser_main.py program.
 
 ### Detailed instruction for each py program
 
-#### For group_1_jobchaser_main.py
+#### group_1_jobchaser_main.py
 
 This py program is a user interface. Once you run it, it shows a main menu as follows:
 
@@ -193,44 +197,44 @@ In the job chaser interface, input 2 to get some insights.
 
 The same as above, you can then Input "q" to return to the main menu and exit the program.
 
-#### For Adzuna.py
+#### Adzuna.py
 
 This py program is to show the jobs information from Adzuna,which can be recommended to users. We used beautifulsoup4 to crawl 2000 job information.  We converted those information to dataframe and it  will be imported in updateDatabase.py. The py file will take a lot of time (about 5-7 minutes). :D
 We use two techniques to crawl job information: Beautifulsoup4 and Selenium. Beautifulsoup4 will take a long time to crawl job information. Therefore,we integrate them into the Jobdatabase.csv file that will be called later when the job query is done.  In the meantime, we've used Selenium to mimic the keyboard and mouse in typing directly what we want to crawl on a web page. When querying for a job in the main function, you will first use Selenium to crawl the information for the job, and then search for the job from the Jobdatabase.csv that has been crawled.
 
-#### For Oneshift.py
+#### Oneshift.py
 
 This py program is designed to scrape job information from Oneshift, an Australian online job network. We use Selenium to run a real-time web scraper to extract jobs from oneshift. Users can pass a jobTitle to the function scrape_from_Oneshift, then the program will automatically search  jobTitle in Oneshift, scrape the search results, and return a dataframe that lists all the jobs finded.
 This py program will be imported by: job_matching.py and  group_1_jobchaser_main.py.
 
-#### For Monster.py
+#### Monster.py
 
 This py program is to show the latest two days' job information in Australia from Monster. We mainly use regular expressions to match job information from the HTML file of the webiste, which is converted through beautifulsoup4. We create a DataFrame variable monster to save these information. This program will be imported by updateDatabase.py, which calls the monster variable in Monster.py to obtain the job information.
 
-#### For JobSearch.py
+#### JobSearch.py
 
 This py program is designed to scrape job information from JobSearch. We use Selenium to run a real-time web scraper to extract jobs from oneshift. Users can pass a jobTitle to the function scrape_from_JobSearch, then the program will automatically search  jobTitle in Oneshift, scrape the search results, and return a dataframe that lists all the jobs finded. This py program will be imported by: preprocessing.py and userinterface.py
 
-#### For seek.py
+#### seek.py
 
 This py program is designed to scrape job information from Seek. The program includes getData, askURL and main functions. It can either run a real-time web scraper according to the job type input by the user or directly scrape all the job information and produce a local database. This program will be imported by updateDatabase.py and job_matching.py.
 
-#### For Course.py
+#### Course.py
 
 This py program is to show the courses information from onlinestudies, we crawled those information and then converted them into dataframe.And the duplicate courses will be dropped.The job seekers can get suggestions on taking useful online courses.This program will be imported by course_matching.py.
 
-#### For updateDatabase.py
+#### updateDatabase.py
 
 We integrate three dataframes together from Adzuna.py,Monster.py and Seek.py. The duplicate job will be dropped. Finally, this will produce a csv file（jobDatabase.csv). This program will be imported by group_1_jobchaser_main.py.
 
-#### For course_matching.py
+#### course_matching.py
 
 We define matchCourse function to match the keyword with course titles through regular expressions. In this function, Course.csv will be read. In case no course is matched from our course resource, we also provide some general courses as complements. Duplicate courses will be dropped, and finally the function will return a DataFrame of recommended courses. This program will be imported by group_1_jobchaser_main.py.
 
-#### For CareerInsights.py
+#### CareerInsights.py
 
 This py program is designed to generate some insights for companies and job seekers, based on data from Australian Bureau of Statistics. This program reads two files: preprocessing.csv and CareerInsights.csv. 
 
-#### For job_matching.py
+#### job_matching.py
 
 We integrate job information together from Oneshift.py,seek.py and Jobsearch.py into jobDatabase.csv. Because it can choose different kinds of job at first. This program will be imported by group_1_jobchaser_main.py.
