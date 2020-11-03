@@ -147,7 +147,7 @@ To run this project, you only need to run the group_1_jobchaser_main.py program.
 
 ### Detailed instruction for each py program
 
-#### group_1_jobchaser_main.py
+#### main.py
 
 This py program is a user interface. Once you run it, it shows a main menu as follows:
 
