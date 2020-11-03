@@ -49,7 +49,7 @@ We tested ChromeDriver and FirefoxDriver on MAC and Windows, and we recommend yo
 For Mac: Chrome is better, but sometimes it may need to add a driver path to the code.
 For Windows: Both can be run without adding a path to the code.
 
-图片: https://uploader.shimo.im/f/NW9wAlwTKLouUBBU.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/1.png)
 
 The function 'openBrowser()' is defined in jobInfo\JobSearch.py and jobInfo\Oneshift.py 
 
@@ -57,10 +57,6 @@ The function 'openBrowser()' is defined in jobInfo\JobSearch.py and jobInfo\Ones
 #### For mac(If you use ChromeDriver)
 
 chromedriver download: http://npm.taobao.org/mirrors/chromedriver/ (please check your chromedriver version)
-For example: If the Chrome version is 86.0.4240.80,
-You can download the version of the driver as below:
-
-图片: https://uploader.shimo.im/f/cTj8yOym1RT4ecDb.png 
 
 Download the corresponding zip package of your own system, unzip the package.
 Then import into the bin folder:
@@ -111,13 +107,13 @@ $ source ~/.bash_profile
 
 chromedriver download: http://npm.taobao.org/mirrors/chromedriver/ (please check your chromedriver version)
 
-图片: https://uploader.shimo.im/f/kZz4twnB5WjV4v1P.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/2.png)
 
 For example: If the Chrome version is 86.0.4240.75,
 You can download this version: http://npm.taobao.org/mirrors/chromedriver/86.0.4240.22/
 Place chromedriver.exe in the Scripts directory under the anaconda installation path, for example: 
 
-图片: https://uploader.shimo.im/f/yWlNoUzKYHYHEAdR.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/3.png)
 
 #### For Windows(If you use FirefoxDriver)
 
@@ -134,15 +130,16 @@ If a wavy line appears when you import our project, please follow this step as b
 SET both package and demo3 as source root,and then press Ctrl+s to save.
 Then in Settings, select Add Source Roots to PYTHONPATH, Add sources root to PYTHONPATH,Then apply.
 
-图片: https://uploader.shimo.im/f/op99yifHoroL9WFO.png
-图片: https://uploader.shimo.im/f/lSiWvvUbJRVS5DD5.png
-Done!
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/4.png)
+
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/5.png)
+
 
 ### Project Structure
 
 To run this project, you only need to run the group_1_jobchaser_main.py program. All the other py program will be imported and called in group_1_jobchaser_main.py .
 
-图片: https://uploader.shimo.im/f/CXx0sUJxCxu4xklM.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/6.png)
 
 
 ### Detailed instruction for each py program
@@ -151,44 +148,45 @@ To run this project, you only need to run the group_1_jobchaser_main.py program.
 
 This py program is a user interface. Once you run it, it shows a main menu as follows:
 
-图片: https://uploader.shimo.im/f/MY764LsfMJ3VJIvi.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/7.png)
 
 Users are asked to input a character and make a choice. Input "q" will exit the program. Input "1"  and "2" will lead you to the employer interface and job chaser interface respectively.
 
 Here is the employer interface. 
 
-图片: https://uploader.shimo.im/f/4Vo08UwqmqcdxQsm.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/8.png)
 
 Input "1"  to post a job.
 
-图片: https://uploader.shimo.im/f/q5tpCP5gxqayQ29R.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/9.png)
 
 Input details respectively and press "enter" to submit. Then it will lead you back to the main menu.
 
 Input "2" to get labor market insights.
 
-图片: https://uploader.shimo.im/f/yjHGGyCRkSVpN32Z.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/10.png)
 
 Here is the job chaser interface.
-图片: https://uploader.shimo.im/f/LCHlo6FoWRUV7NnS.png
+
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/11.png)
 
 In the job chaser interface, input 1 to find a job, and input the job that you want to know about( here I input "engineer" as an example).
 
-图片: https://uploader.shimo.im/f/0vrHMKMxELSvkOpx.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/12.png)
 
 Then it returns a list of 10 search results.
 
-图片: https://uploader.shimo.im/f/jP7LJiweV21zhITm.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/13.png)
 
 To see more job information, Input "Y". If input "N", the program will stop showing search results and recommend some relevant courses for you to improve yourself. If the matched courses are not sufficient, we will also recommend some useful general courses to help you improve skills in other respects, such as leadership, programming and psychology. These courses will also benefit you a lot!
 
-图片: https://uploader.shimo.im/f/flumAeng2s44QVql.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/14.png)
 
 Then input "q" to return to the main menu.
 
 In the job chaser interface, input 2 to get some insights.
 
-图片: https://uploader.shimo.im/f/GnuAcyLJOWKEoDE2.png
+![image](https://github.com/github-jpk/JobChaser/blob/main/images/readme_images/15.png)
 
 The same as above, you can then Input "q" to return to the main menu and exit the program.
 
