@@ -13,7 +13,9 @@ Usage
 A report shows that in Australia,  there are over 20,000 people per month seeking for a job, but jobs opening are posted in many different platforms, which makes it difficult to search. Therefore, we designed this product to integrate information efficiently, which can save time for both job seekers and recruiters. Job seekers can find desired job information with ease, receive some practical advice to find ideal jobs and get some recommendations about online courses to sharpen their competitiveness. Companies can post jobs here and find some insights to improve recruitement plan. 
 
 ## Installation
+
 ### PyPI
+
 $ pip install numpy
 $ pip install pandas
 $ pip install xlwt
@@ -24,6 +26,7 @@ $ pip install beautifulsoup4
 $ pip install -U selenium
 
 ### conda
+
 $ conda install numpy
 $ conda install pandas
 $ conda install xlwt
