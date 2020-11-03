@@ -1,14 +1,8 @@
 # JobChaser
-Job Chaser
-Developed by Group1 
-Kehan Wang        kehanw@andrew.cmu.edu
-Panke Jing           pjing@andrew.cmu.edu
-Kun Liu                 kunliu@andrew.cmu.edu
-Zhengqian Luo    zhengqil@andrew.cmu.edu
-Guojiang Zhao     guojianz@andrew.cmu.edu
-click here to watch a video to see how our program runs
 
-Contents
+A video to see how the program runs: https://youtu.be/Nwx3cAbwe9U
+
+## Contents
 
 Background
 Installation
