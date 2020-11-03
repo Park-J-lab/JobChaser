@@ -8,12 +8,12 @@ Background
 Installation
 Usage
 
-Background
+## Background
 
 A report shows that in Australia,  there are over 20,000 people per month seeking for a job, but jobs opening are posted in many different platforms, which makes it difficult to search. Therefore, we designed this product to integrate information efficiently, which can save time for both job seekers and recruiters. Job seekers can find desired job information with ease, receive some practical advice to find ideal jobs and get some recommendations about online courses to sharpen their competitiveness. Companies can post jobs here and find some insights to improve recruitement plan. 
 
-Installation
-# PyPI
+## Installation
+### PyPI
 $ pip install numpy
 $ pip install pandas
 $ pip install xlwt
@@ -23,7 +23,7 @@ $ python -m pip install matplotlib
 $ pip install beautifulsoup4 
 $ pip install -U selenium
 
-#Or conda
+### conda
 $ conda install numpy
 $ conda install pandas
 $ conda install xlwt
@@ -33,18 +33,10 @@ $ conda install matplotlib
 $ conda install beautifulsoup4
 $ conda install -c conda-forge selenium
 
-Numpy
-Pandas
-xlwt
-xlrd
-matplotlib
-beautifulsoup4
-selenium
-
-Selenium Installation
-You should do this first,plz
+### Selenium Installation
+You should do this first, plz
  $ conda install selenium
-You need to pay attention to the Webdriver
+You need to pay attention to the Webdriver: https://selenium-python.readthedocs.io/install
 
 
 We tested ChromeDriver and FirefoxDriver on MAC and Windows, and we recommend you:
@@ -55,7 +47,7 @@ For Windows: Both can be run without adding a path to the code.
 (The function 'openBrowser()' is defined in jobInfo\JobSearch.py and jobInfo\Oneshift.py )
 
 
-For mac(If you use ChromeDriver)
+#### For mac(If you use ChromeDriver)
 chromedriver download(please check your chromedriver version)
 For example: If the Chrome version is 86.0.4240.80,
 You can download the version of the driver as below:图片: https://uploader.shimo.im/f/cTj8yOym1RT4ecDb.png 
